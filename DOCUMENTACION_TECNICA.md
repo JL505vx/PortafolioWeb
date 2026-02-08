@@ -23,7 +23,7 @@ Migrar el portafolio estatico (HTML/CSS) a una base Django para que pueda crecer
 2. `core/urls.py` delega a `siteapp.urls`.
 3. `siteapp/urls.py` enruta a `views.home`.
 4. `siteapp/views.py` renderiza `templates/siteapp/home.html`.
-5. El template carga CSS via `{% static 'css/styles.css' %}`.
+5. El template carga CSS usando el tag `static` de Django.
 
 ## 4) Archivos Python (comentados)
 
@@ -68,7 +68,7 @@ Modelos base para escalar:
 ## 5) Archivos HTML/CSS (comentados)
 
 ### `templates/siteapp/home.html`
-- Incluye `{% load static %}` para usar archivos estaticos.
+- Incluye carga de `static` de Django para servir archivos estaticos.
 - Secciones principales:
   - Hero
   - Sobre mi
