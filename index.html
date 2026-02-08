@@ -1,0 +1,381 @@
+<!--
+  ARCHIVO LEGADO (modo estatico):
+  Esta copia se conserva como referencia rapida.
+  En la version Django activa debes editar:
+  - templates/siteapp/home.html
+  - static/css/styles.css
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuracion base del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Jesus del Angel Lugardo Rodriguez, estudiante de Ingeniería en Sistemas enfocado en backend, bases de datos, Linux, Docker y análisis de datos junior.">
+
+  <!-- SEO basico -->
+  <meta name="author" content="Jesus del Angel Lugardo Rodriguez">
+  <meta name="robots" content="index,follow">
+
+  <!-- Titulo de la pestaña -->
+  <title>Jesus del Angel Lugardo Rodriguez | Portafolio de Ingeniería en Sistemas</title>
+
+  <!-- Tipografia profesional -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos separada -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de navegacion fija -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#inicio">Ing. <span>Jesus Lugardo</span></a>
+      <nav class="nav">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="#formacion">Formación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO: Presentacion principal -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <article class="hero-copy reveal" style="--delay: 0.1s;">
+          <span class="tag">Portafolio Profesional</span>
+          <h1>Estudiante de Ingeniería en Sistemas enfocado en Backend, Bases de Datos y Operación de Sistemas</h1>
+          <p>
+            Soy Jesus del Angel Lugardo Rodriguez. Desarrollo soluciones estables para procesos administrativos y de control, con enfoque en Java/Python, SQL Server/MySQL, Linux, Docker y seguridad básica aplicada. Busco prácticas profesionales o posición junior para aportar con disciplina técnica, documentación clara y mejora continua.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-ghost" href="assets/cv/CV-Jesus-del-Angel-Lugardo-Rodriguez.pdf" target="_blank" rel="noreferrer noopener">Descargar CV</a>
+            <a class="btn btn-ghost" href="#contacto">Contactar</a>
+          </div>
+        </article>
+
+        <aside class="hero-image-card reveal" style="--delay: 0.2s;">
+          <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Espacio de trabajo de ingeniería de software">
+          <div class="hero-badge">
+            <strong>Perfil actual</strong>
+            <p>UGM Minatitlán (2022 - 2026) | Ruta backend + analítica de datos junior</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobre-mi" class="section">
+      <div class="container grid-2">
+        <article class="card reveal" style="--delay: 0.1s;">
+          <span class="tag">Sobre mí</span>
+          <h2 class="section-title">Ingeniería con enfoque en operación, datos y estabilidad</h2>
+          <p>
+            Soy estudiante de Ingeniería en Sistemas en México, actualmente en la UGM campus Minatitlán. He participado en el desarrollo de un sistema de asistencia y administración con formularios, módulos de control y persistencia en MySQL/SQL Server. Me interesa construir backend mantenible, estructurar bases de datos confiables y mejorar la visibilidad operativa con análisis de datos.
+          </p>
+          <ul class="about-list">
+            <li>Experiencia académica y práctica en CRUD, validaciones y reportes operativos.</li>
+            <li>Uso de Git para control de versiones y documentación técnica por módulos.</li>
+            <li>Trabajo con Linux y Docker en entornos de laboratorio y despliegue local.</li>
+            <li>Interés en ciberseguridad aplicada: hardening básico, control de acceso y buenas prácticas.</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" style="--delay: 0.2s;">
+          <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Laptop con código y monitoreo de sistemas">
+        </article>
+      </div>
+    </section>
+
+    <!-- HABILIDADES TECNICAS -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <span class="tag">Habilidades</span>
+        <h2 class="section-title">Competencias técnicas por categoría</h2>
+        <p class="section-subtitle">Niveles sugeridos para perfil junior: básico, intermedio y en progreso. Ajusta según tu experiencia real y evidencia en proyectos.</p>
+
+        <div class="skills-grid">
+          <article class="card skill-card reveal" style="--delay: 0.05s;">
+            <h3>Backend</h3>
+            <div class="pill-list">
+              <span class="pill">Java (Intermedio)</span>
+              <span class="pill">Python (Intermedio)</span>
+              <span class="pill">API REST (Básico)</span>
+              <span class="pill">Validación de datos</span>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="--delay: 0.1s;">
+            <h3>Bases de datos</h3>
+            <div class="pill-list">
+              <span class="pill">SQL Server (Intermedio)</span>
+              <span class="pill">MySQL (Intermedio)</span>
+              <span class="pill">Modelado relacional</span>
+              <span class="pill">Consultas y reportes</span>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="--delay: 0.15s;">
+            <h3>Sistemas y DevOps</h3>
+            <div class="pill-list">
+              <span class="pill">Linux (Intermedio)</span>
+              <span class="pill">Docker (Básico+)</span>
+              <span class="pill">Git / GitHub</span>
+              <span class="pill">Raspberry Pi</span>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="--delay: 0.2s;">
+            <h3>Datos y seguridad</h3>
+            <div class="pill-list">
+              <span class="pill">Power BI (Inicial)</span>
+              <span class="pill">DAX (En progreso)</span>
+              <span class="pill">Hardening básico</span>
+              <span class="pill">Control de accesos</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA / SERVICIOS -->
+    <section id="experiencia" class="section">
+      <div class="container">
+        <span class="tag">Experiencia</span>
+        <h2 class="section-title">Experiencia aplicada y servicios técnicos</h2>
+        <p class="section-subtitle">Perfil orientado a resultados en backend, operación de sistemas y mejora continua de procesos.</p>
+
+        <div class="services-grid">
+          <article class="card reveal" style="--delay: 0.05s;">
+            <h3>Desarrollo Backend (Python / Django)</h3>
+            <p>Construcción de módulos web para formularios, panel administrativo, rutas y reglas de negocio con arquitectura mantenible.</p>
+            <ul class="about-list">
+              <li>Modelado inicial de entidades y relaciones.</li>
+              <li>Desarrollo por etapas con validaciones y pruebas manuales.</li>
+              <li>Preparación para despliegue en Render.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" style="--delay: 0.1s;">
+            <h3>Bases de datos y consultas</h3>
+            <p>Diseño y operación de bases relacionales para sistemas administrativos con enfoque en integridad de datos.</p>
+            <ul class="about-list">
+              <li>Consultas SQL para reportes y seguimiento.</li>
+              <li>Diseño de CRUD con trazabilidad básica.</li>
+              <li>Ruta de evolución de SQLite hacia PostgreSQL.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" style="--delay: 0.15s;">
+            <h3>Linux, Docker y operación</h3>
+            <p>Montaje de entornos técnicos para pruebas, demos y despliegues reproducibles.</p>
+            <ul class="about-list">
+              <li>Uso de Docker para consistencia de entornos.</li>
+              <li>Trabajo en Linux y Raspberry Pi para laboratorios.</li>
+              <li>Documentación de procesos técnicos para mantenimiento.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <span class="tag">Proyectos</span>
+        <h2 class="section-title">Proyectos reales con código y demo pública</h2>
+        <p class="section-subtitle">Todos los proyectos incluyen repositorio y despliegue. El enfoque es mostrar resolución de problemas, stack usado y evolución técnica.</p>
+
+        <div class="projects-grid">
+          <article class="card project-card reveal" style="--delay: 0.05s;">
+            <img src="https://images.pexels.com/photos/7915357/pexels-photo-7915357.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Juego por turnos desarrollado con JavaScript">
+            <h3>Bet or Lie - Juego por turnos</h3>
+            <p>Proyecto web tipo cubilete por turnos para practicar lógica de estado, flujo por rondas y validaciones de jugadas.</p>
+            <div class="project-meta">
+              <span><strong>Stack:</strong> HTML, CSS, JavaScript</span>
+              <span><strong>Problema:</strong> implementar turnos y reglas sin backend.</span>
+              <span><strong>Resultado:</strong> demo funcional pública para pruebas de usabilidad y lógica.</span>
+              <span><strong>Aprendizaje:</strong> manejo de estado en frontend y diseño de reglas de juego.</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://jl505vx.github.io/bet-or-lie/juego.html" target="_blank" rel="noreferrer noopener">Ver demo</a>
+              <a class="btn btn-ghost" href="https://github.com/JL505vx/bet-or-lie" target="_blank" rel="noreferrer noopener">Ver código</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" style="--delay: 0.1s;">
+            <img src="https://images.pexels.com/photos/7089629/pexels-photo-7089629.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sitio web para consultorio de anestesiología">
+            <h3>Sitio web para consultorio de anestesiología</h3>
+            <p>Landing orientada a presentar servicios médicos y facilitar contacto digital con una imagen profesional del consultorio.</p>
+            <div class="project-meta">
+              <span><strong>Stack:</strong> HTML, CSS, JavaScript</span>
+              <span><strong>Problema:</strong> no existía presencia digital organizada para el consultorio.</span>
+              <span><strong>Resultado:</strong> sitio informativo publicado para compartir servicios y datos de contacto.</span>
+              <span><strong>Aprendizaje:</strong> arquitectura de contenido web médico y diseño orientado a confianza.</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://jl505vx.github.io/danielapaginaanesteciologa/" target="_blank" rel="noreferrer noopener">Ver demo</a>
+              <a class="btn btn-ghost" href="https://github.com/JL505vx/danielapaginaanesteciologa" target="_blank" rel="noreferrer noopener">Ver código</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" style="--delay: 0.15s;">
+            <img src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Plataforma web para clínica dental en Django">
+            <h3>Página web para clínica dental</h3>
+            <p>Aplicación web en Django para captación de pacientes, presentación de servicios y flujo inicial de contacto.</p>
+            <div class="project-meta">
+              <span><strong>Stack:</strong> Django 5, SQLite, HTML, CSS, JavaScript, Gunicorn, WhiteNoise, Render</span>
+              <span><strong>Problema:</strong> clínica sin canal web centralizado para generar confianza y prospectos.</span>
+              <span><strong>Resultado:</strong> sitio en producción con formularios y estructura escalable para agenda/citas.</span>
+              <span><strong>Aprendizaje:</strong> despliegue real en Render, arquitectura Django y backlog técnico priorizado.</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://paginadentista.onrender.com/" target="_blank" rel="noreferrer noopener">Ver demo</a>
+              <a class="btn btn-ghost" href="https://github.com/JL505vx/PaginaDentista" target="_blank" rel="noreferrer noopener">Ver código</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" style="--delay: 0.2s;">
+            <img src="https://images.pexels.com/photos/8376277/pexels-photo-8376277.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Plataforma web para anestesiólogo con módulos en Django">
+            <h3>Página web para anestesiólogo</h3>
+            <p>Proyecto full-stack con módulos de contenido y comunicación para reducir dudas repetitivas y mejorar seguimiento digital.</p>
+            <div class="project-meta">
+              <span><strong>Stack:</strong> Python, Django, HTML, CSS, SQLite, Docker, GitHub, Render</span>
+              <span><strong>Problema:</strong> ausencia de plataforma propia para información y contacto médico.</span>
+              <span><strong>Resultado:</strong> demo funcional con base para blog, foro y panel por rol.</span>
+              <span><strong>Aprendizaje:</strong> diseño modular en Django y enfoque de mejoras operativas (PostgreSQL, seguridad, CI/CD).</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://paginatioricardo.onrender.com/" target="_blank" rel="noreferrer noopener">Ver demo</a>
+              <a class="btn btn-ghost" href="https://github.com/JL505vx/PaginaTioRicardo" target="_blank" rel="noreferrer noopener">Ver código</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" style="--delay: 0.25s;">
+            <img src="https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Blog informativo sobre TID">
+            <h3>Blog informativo sobre TID (ELE Blog)</h3>
+            <p>Blog estático para difusión de contenido informativo, con enfoque en claridad, navegación simple y experiencia móvil.</p>
+            <div class="project-meta">
+              <span><strong>Stack:</strong> HTML5, CSS3, JavaScript (vanilla)</span>
+              <span><strong>Problema:</strong> necesidad de publicar contenido rápido sin backend ni base de datos.</span>
+              <span><strong>Resultado:</strong> sitio ligero y público para validar contenido, estructura y línea editorial.</span>
+              <span><strong>Aprendizaje:</strong> diseño responsive, filtros en frontend y roadmap de migración a Django.</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://jl505vx.github.io/ELE_Blog-/" target="_blank" rel="noreferrer noopener">Ver demo</a>
+              <a class="btn btn-ghost" href="https://github.com/JL505vx/ELE_Blog-" target="_blank" rel="noreferrer noopener">Ver código</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICACIONES -->
+    <section id="certificaciones" class="section">
+      <div class="container">
+        <span class="tag">Certificaciones</span>
+        <h2 class="section-title">Cursos y formación técnica complementaria</h2>
+        <p class="section-subtitle">Espacio para reforzar credibilidad técnica. Reemplaza cada elemento por tus constancias reales.</p>
+        <div class="cert-grid">
+          <article class="card cert-card reveal" style="--delay: 0.05s;">
+            <h3>SQL y modelado de datos</h3>
+            <p>[Plataforma + año]</p>
+            <span class="cert-note">Consultas, joins, índices, normalización y reportes.</span>
+          </article>
+
+          <article class="card cert-card reveal" style="--delay: 0.1s;">
+            <h3>Linux y administración básica</h3>
+            <p>[Plataforma + año]</p>
+            <span class="cert-note">Comandos esenciales, permisos, procesos y servicios.</span>
+          </article>
+
+          <article class="card cert-card reveal" style="--delay: 0.15s;">
+            <h3>Docker fundamentos</h3>
+            <p>[Plataforma + año]</p>
+            <span class="cert-note">Contenedores, volúmenes, redes y despliegue local.</span>
+          </article>
+
+          <article class="card cert-card reveal" style="--delay: 0.2s;">
+            <h3>Power BI / DAX inicial</h3>
+            <p>[Plataforma + año]</p>
+            <span class="cert-note">Modelado básico, medidas y visualización de KPIs.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMACION Y CERTIFICACIONES -->
+    <section id="formacion" class="section">
+      <div class="container grid-2">
+        <article class="card reveal" style="--delay: 0.1s;">
+          <span class="tag">Formación</span>
+          <h2 class="section-title">Educación y certificaciones</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>Ingeniería en Sistemas Computacionales</h4>
+              <p>UGM Campus Minatitlán | Minatitlán, Veracruz, México | 2022 - 2026</p>
+            </div>
+            <div class="timeline-item">
+              <h4>Curso: SQL y Modelado de Datos</h4>
+              <p>En progreso | Enfoque en consultas, joins, índices y normalización.</p>
+            </div>
+            <div class="timeline-item">
+              <h4>Curso: Linux y Docker Fundamentos</h4>
+              <p>En progreso | Comandos esenciales, contenedores, volúmenes y redes.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--delay: 0.2s;">
+          <span class="tag">Enfoque profesional</span>
+          <h2 class="section-title">Cómo aporto en un equipo técnico</h2>
+          <ul class="about-list">
+            <li>Analizo requerimientos y los transformo en tareas técnicas claras.</li>
+            <li>Diseño soluciones mantenibles priorizando integridad de datos y trazabilidad.</li>
+            <li>Documento decisiones de implementación para facilitar soporte y escalabilidad.</li>
+            <li>Aplico prácticas de seguridad básica: roles, validaciones y manejo de errores.</li>
+            <li>Mantengo enfoque en estabilidad, pruebas básicas y mejoras iterativas.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <article class="cta reveal" style="--delay: 0.1s;">
+          <h2>Disponible para prácticas profesionales y posición junior</h2>
+          <p>
+            Si tu equipo necesita apoyo en backend, bases de datos y operación técnica con enfoque serio, estoy listo para colaborar en proyectos reales y medibles.
+          </p>
+          <div class="contact-links">
+            <a class="btn btn-primary" href="mailto:gpdev13@gmail.com">gpdev13@gmail.com</a>
+            <a class="btn btn-ghost" href="https://github.com/JL505vx" target="_blank" rel="noreferrer noopener">GitHub @JL505vx</a>
+            <a class="btn btn-ghost" href="https://wa.me/529222275962?text=Hola%20Jesus%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20tu%20perfil." target="_blank" rel="noreferrer noopener">WhatsApp</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Boton flotante directo a WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/529222275962?text=Hola%20Jesus%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20tu%20perfil." target="_blank" rel="noreferrer noopener" aria-label="Contactar por WhatsApp">
+    WhatsApp
+  </a>
+
+  <!-- Pie de pagina -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Jesus del Angel Lugardo Rodriguez. Portafolio profesional de Ingeniería en Sistemas.</p>
+    </div>
+  </footer>
+</body>
+</html>
