@@ -156,3 +156,25 @@ Ruta sugerida:
 3. Pasar `styles.css` a `static/css/`.
 4. Crear modelos para proyectos/certificaciones y cargarlos desde admin.
 5. Migrar de SQLite a PostgreSQL cuando pases a producción estable.
+
+## 13) Deploy en Render (Django)
+
+Config recomendada para un `Web Service`:
+
+- Build Command:
+`bash build.sh`
+
+- Start Command:
+`gunicorn core.wsgi:application`
+
+Variables de entorno mínimas:
+- `SECRET_KEY`: (usa Generate en Render)
+- `DEBUG`: `False`
+- `ALLOWED_HOSTS`: `.onrender.com`
+
+Opcional para PostgreSQL (recomendado en producción):
+- `DATABASE_URL`: cadena de conexión de Render PostgreSQL.
+
+Nota:
+- GitHub Pages no ejecuta Django backend.
+- Para app Django completa usa Render.
